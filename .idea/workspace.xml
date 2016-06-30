@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main.java" line="95" mnemonic="3" />
+    <bookmark url="file://$PROJECT_DIR$/src/main.java" line="107" mnemonic="3" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="228c78e7-8a4c-4a70-b508-e29ce0241f28" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.java" afterPath="$PROJECT_DIR$/src/main.java" />
     </list>
     <ignored path="data-collections-lab.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +30,8 @@
       <file leaf-file-name="main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="133" column="1" selection-start-line="133" selection-start-column="1" selection-end-line="133" selection-end-column="1" />
+            <state relative-caret-position="390">
+              <caret line="136" column="34" selection-start-line="136" selection-start-column="34" selection-end-line="136" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#main#0;class#main#0" expanded="false" />
@@ -40,7 +39,9 @@
                 <element signature="method#isInteger#0;class#main#0" expanded="false" />
                 <element signature="method#getUserInput#0;class#main#0" expanded="false" />
                 <element signature="method#firstWord#0;class#main#0" expanded="false" />
+                <element signature="method#addItem#0;class#main#0" expanded="false" />
                 <element signature="method#listItems#0;class#main#0" expanded="false" />
+                <element signature="method#deleteItem#0;class#main#0" expanded="false" />
                 <element signature="method#helpHer#0;class#main#0" expanded="false" />
                 <element signature="method#homeScreen#0;class#main#0" expanded="false" />
               </folding>
@@ -467,7 +468,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -494,8 +495,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="133" column="1" selection-start-line="133" selection-start-column="1" selection-end-line="133" selection-end-column="1" />
+        <state relative-caret-position="390">
+          <caret line="136" column="34" selection-start-line="136" selection-start-column="34" selection-end-line="136" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#main#0;class#main#0" expanded="false" />
@@ -503,7 +504,9 @@
             <element signature="method#isInteger#0;class#main#0" expanded="false" />
             <element signature="method#getUserInput#0;class#main#0" expanded="false" />
             <element signature="method#firstWord#0;class#main#0" expanded="false" />
+            <element signature="method#addItem#0;class#main#0" expanded="false" />
             <element signature="method#listItems#0;class#main#0" expanded="false" />
+            <element signature="method#deleteItem#0;class#main#0" expanded="false" />
             <element signature="method#helpHer#0;class#main#0" expanded="false" />
             <element signature="method#homeScreen#0;class#main#0" expanded="false" />
           </folding>
