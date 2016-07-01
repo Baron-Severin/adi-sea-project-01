@@ -33,11 +33,15 @@ public class main {
         listItems(list);
     //if the first words of the command is add, followed by a space, then at least one other character, call add method
       } else if (firstWord(input).toLowerCase().equals("add") && input.length()>4) {
-        if (isValidItem(input.substring(4))) {
-          addItem(input.substring(4), list);
-          System.out.println("\nYou have added '"+input.substring(4)+"' to the list");
+        if (input.substring(4).length()<60){
+          if (isValidItem(input.substring(4))) {
+            addItem(input.substring(4), list);
+            System.out.println("\nYou have added '" + input.substring(4) + "' to the list");
+          } else {
+            System.out.println("\nUnfortunately I don't recognize that as a valid item. To use add, type 'add item name'. Note that typing numbers or typing consecutive spaces is invalid.\n");
+          }
         } else {
-          System.out.println("\nUnfortunately I don't recognize that as a valid item. To use add, type 'add item name'. Note that typing numbers or typing consecutive spaces is invalid.\n");
+          System.out.println("\nThat item is too long for me to process. Keep items under 60 characters long (including spaces).");
         }
     //if the first word is delete, followed by a space, then the remainder of the request in parse-able to an int
       } else if (firstWord(input).toLowerCase().equals("delete") && isInteger(input.substring(7))) {
