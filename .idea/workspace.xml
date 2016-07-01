@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main.java" line="150" mnemonic="3" />
+    <bookmark url="file://$PROJECT_DIR$/src/main.java" line="158" mnemonic="3" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="228c78e7-8a4c-4a70-b508-e29ce0241f28" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hangMan.java" afterPath="$PROJECT_DIR$/src/hangMan.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.java" afterPath="$PROJECT_DIR$/src/main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testStuff.java" afterPath="$PROJECT_DIR$/src/testStuff.java" />
     </list>
     <ignored path="data-collections-lab.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,10 +31,11 @@
       <file leaf-file-name="main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="332" column="5" selection-start-line="332" selection-start-column="5" selection-end-line="332" selection-end-column="5" />
+            <state relative-caret-position="690">
+              <caret line="271" column="48" selection-start-line="271" selection-start-column="48" selection-end-line="271" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#main#0;class#main#0" expanded="false" />
                 <element signature="method#exitTime#0;class#main#0" expanded="false" />
                 <element signature="method#isInteger#0;class#main#0" expanded="false" />
                 <element signature="method#getUserInput#0;class#main#0" expanded="false" />
@@ -49,14 +50,26 @@
                 <element signature="method#lineOfStars#0;class#main#0" expanded="false" />
                 <element signature="method#createLetterList#0;class#main#0" expanded="false" />
                 <element signature="method#addToLetterHash#0;class#main#0" expanded="false" />
-                <element signature="method#printCurrentStatus#0;class#main#0" expanded="false" />
                 <element signature="method#currentStatus#0;class#main#0" expanded="false" />
                 <element signature="method#gameInput#0;class#main#0" expanded="false" />
+                <element signature="method#startGame#0;class#main#0" expanded="false" />
                 <element signature="method#printCentrally#0;class#main#0" expanded="false" />
-                <marker date="1467399993000" expanded="true" signature="506:3228" ph="..." />
-                <marker date="1467399993000" expanded="true" signature="507:3222" ph="..." />
-                <marker date="1467399993000" expanded="true" signature="507:3228" ph="..." />
+                <element signature="method#addToHistory#0;class#main#0" expanded="false" />
+                <element signature="method#printHistory#0;class#main#0" expanded="false" />
+                <marker date="1467408687000" expanded="true" signature="559:3567" ph="..." />
+                <marker date="1467408687000" expanded="true" signature="560:3561" ph="..." />
+                <marker date="1467408687000" expanded="true" signature="560:3567" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testStuff.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/testStuff.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -97,17 +110,17 @@
       <list>
         <option value="$PROJECT_DIR$/src/tests.java" />
         <option value="$PROJECT_DIR$/src/playGame.java" />
+        <option value="$PROJECT_DIR$/src/hangMan.java" />
         <option value="$PROJECT_DIR$/src/testStuff.java" />
         <option value="$PROJECT_DIR$/src/main.java" />
-        <option value="$PROJECT_DIR$/src/hangMan.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="15" />
-    <option name="y" value="45" />
+    <option name="y" value="23" />
     <option name="width" value="1260" />
-    <option name="height" value="689" />
+    <option name="height" value="709" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -519,18 +532,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="15" y="45" width="1260" height="689" extended-state="0" />
-    <editor active="true" />
+    <frame x="15" y="23" width="1260" height="709" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2564516" sideWeight="0.12301587" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27741936" sideWeight="0.8769841" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.128125" sideWeight="0.8769841" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -553,7 +566,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="26" />
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -568,6 +581,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#main#0" expanded="false" />
             <element signature="method#exitTime#0;class#main#0" expanded="false" />
             <element signature="method#isInteger#0;class#main#0" expanded="false" />
             <element signature="method#getUserInput#0;class#main#0" expanded="false" />
@@ -582,13 +596,15 @@
             <element signature="method#lineOfStars#0;class#main#0" expanded="false" />
             <element signature="method#createLetterList#0;class#main#0" expanded="false" />
             <element signature="method#addToLetterHash#0;class#main#0" expanded="false" />
-            <element signature="method#printCurrentStatus#0;class#main#0" expanded="false" />
             <element signature="method#currentStatus#0;class#main#0" expanded="false" />
             <element signature="method#gameInput#0;class#main#0" expanded="false" />
+            <element signature="method#startGame#0;class#main#0" expanded="false" />
             <element signature="method#printCentrally#0;class#main#0" expanded="false" />
-            <marker date="1467399993000" expanded="true" signature="506:3228" ph="..." />
-            <marker date="1467399993000" expanded="true" signature="507:3222" ph="..." />
-            <marker date="1467399993000" expanded="true" signature="507:3228" ph="..." />
+            <element signature="method#addToHistory#0;class#main#0" expanded="false" />
+            <element signature="method#printHistory#0;class#main#0" expanded="false" />
+            <marker date="1467408687000" expanded="true" signature="559:3567" ph="..." />
+            <marker date="1467408687000" expanded="true" signature="560:3561" ph="..." />
+            <marker date="1467408687000" expanded="true" signature="560:3567" ph="..." />
           </folding>
         </state>
       </provider>
@@ -599,6 +615,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#main#0" expanded="false" />
             <element signature="method#exitTime#0;class#main#0" expanded="false" />
             <element signature="method#isInteger#0;class#main#0" expanded="false" />
             <element signature="method#getUserInput#0;class#main#0" expanded="false" />
@@ -613,13 +630,15 @@
             <element signature="method#lineOfStars#0;class#main#0" expanded="false" />
             <element signature="method#createLetterList#0;class#main#0" expanded="false" />
             <element signature="method#addToLetterHash#0;class#main#0" expanded="false" />
-            <element signature="method#printCurrentStatus#0;class#main#0" expanded="false" />
             <element signature="method#currentStatus#0;class#main#0" expanded="false" />
             <element signature="method#gameInput#0;class#main#0" expanded="false" />
+            <element signature="method#startGame#0;class#main#0" expanded="false" />
             <element signature="method#printCentrally#0;class#main#0" expanded="false" />
-            <marker date="1467399993000" expanded="true" signature="506:3228" ph="..." />
-            <marker date="1467399993000" expanded="true" signature="507:3222" ph="..." />
-            <marker date="1467399993000" expanded="true" signature="507:3228" ph="..." />
+            <element signature="method#addToHistory#0;class#main#0" expanded="false" />
+            <element signature="method#printHistory#0;class#main#0" expanded="false" />
+            <marker date="1467408687000" expanded="true" signature="559:3567" ph="..." />
+            <marker date="1467408687000" expanded="true" signature="560:3561" ph="..." />
+            <marker date="1467408687000" expanded="true" signature="560:3567" ph="..." />
           </folding>
         </state>
       </provider>
@@ -630,6 +649,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#main#0" expanded="false" />
             <element signature="method#exitTime#0;class#main#0" expanded="false" />
             <element signature="method#isInteger#0;class#main#0" expanded="false" />
             <element signature="method#getUserInput#0;class#main#0" expanded="false" />
@@ -644,13 +664,15 @@
             <element signature="method#lineOfStars#0;class#main#0" expanded="false" />
             <element signature="method#createLetterList#0;class#main#0" expanded="false" />
             <element signature="method#addToLetterHash#0;class#main#0" expanded="false" />
-            <element signature="method#printCurrentStatus#0;class#main#0" expanded="false" />
             <element signature="method#currentStatus#0;class#main#0" expanded="false" />
             <element signature="method#gameInput#0;class#main#0" expanded="false" />
+            <element signature="method#startGame#0;class#main#0" expanded="false" />
             <element signature="method#printCentrally#0;class#main#0" expanded="false" />
-            <marker date="1467399993000" expanded="true" signature="506:3228" ph="..." />
-            <marker date="1467399993000" expanded="true" signature="507:3222" ph="..." />
-            <marker date="1467399993000" expanded="true" signature="507:3228" ph="..." />
+            <element signature="method#addToHistory#0;class#main#0" expanded="false" />
+            <element signature="method#printHistory#0;class#main#0" expanded="false" />
+            <marker date="1467408687000" expanded="true" signature="559:3567" ph="..." />
+            <marker date="1467408687000" expanded="true" signature="560:3561" ph="..." />
+            <marker date="1467408687000" expanded="true" signature="560:3567" ph="..." />
           </folding>
         </state>
       </provider>
@@ -661,6 +683,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#main#0" expanded="false" />
             <element signature="method#exitTime#0;class#main#0" expanded="false" />
             <element signature="method#isInteger#0;class#main#0" expanded="false" />
             <element signature="method#getUserInput#0;class#main#0" expanded="false" />
@@ -675,13 +698,15 @@
             <element signature="method#lineOfStars#0;class#main#0" expanded="false" />
             <element signature="method#createLetterList#0;class#main#0" expanded="false" />
             <element signature="method#addToLetterHash#0;class#main#0" expanded="false" />
-            <element signature="method#printCurrentStatus#0;class#main#0" expanded="false" />
             <element signature="method#currentStatus#0;class#main#0" expanded="false" />
             <element signature="method#gameInput#0;class#main#0" expanded="false" />
+            <element signature="method#startGame#0;class#main#0" expanded="false" />
             <element signature="method#printCentrally#0;class#main#0" expanded="false" />
-            <marker date="1467399993000" expanded="true" signature="506:3228" ph="..." />
-            <marker date="1467399993000" expanded="true" signature="507:3222" ph="..." />
-            <marker date="1467399993000" expanded="true" signature="507:3228" ph="..." />
+            <element signature="method#addToHistory#0;class#main#0" expanded="false" />
+            <element signature="method#printHistory#0;class#main#0" expanded="false" />
+            <marker date="1467408687000" expanded="true" signature="559:3567" ph="..." />
+            <marker date="1467408687000" expanded="true" signature="560:3561" ph="..." />
+            <marker date="1467408687000" expanded="true" signature="560:3567" ph="..." />
           </folding>
         </state>
       </provider>
@@ -692,6 +717,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#main#0" expanded="false" />
             <element signature="method#exitTime#0;class#main#0" expanded="false" />
             <element signature="method#isInteger#0;class#main#0" expanded="false" />
             <element signature="method#getUserInput#0;class#main#0" expanded="false" />
@@ -706,13 +732,15 @@
             <element signature="method#lineOfStars#0;class#main#0" expanded="false" />
             <element signature="method#createLetterList#0;class#main#0" expanded="false" />
             <element signature="method#addToLetterHash#0;class#main#0" expanded="false" />
-            <element signature="method#printCurrentStatus#0;class#main#0" expanded="false" />
             <element signature="method#currentStatus#0;class#main#0" expanded="false" />
             <element signature="method#gameInput#0;class#main#0" expanded="false" />
+            <element signature="method#startGame#0;class#main#0" expanded="false" />
             <element signature="method#printCentrally#0;class#main#0" expanded="false" />
-            <marker date="1467399993000" expanded="true" signature="506:3228" ph="..." />
-            <marker date="1467399993000" expanded="true" signature="507:3222" ph="..." />
-            <marker date="1467399993000" expanded="true" signature="507:3228" ph="..." />
+            <element signature="method#addToHistory#0;class#main#0" expanded="false" />
+            <element signature="method#printHistory#0;class#main#0" expanded="false" />
+            <marker date="1467408687000" expanded="true" signature="559:3567" ph="..." />
+            <marker date="1467408687000" expanded="true" signature="560:3561" ph="..." />
+            <marker date="1467408687000" expanded="true" signature="560:3567" ph="..." />
           </folding>
         </state>
       </provider>
@@ -723,6 +751,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#main#0" expanded="false" />
             <element signature="method#exitTime#0;class#main#0" expanded="false" />
             <element signature="method#isInteger#0;class#main#0" expanded="false" />
             <element signature="method#getUserInput#0;class#main#0" expanded="false" />
@@ -737,13 +766,15 @@
             <element signature="method#lineOfStars#0;class#main#0" expanded="false" />
             <element signature="method#createLetterList#0;class#main#0" expanded="false" />
             <element signature="method#addToLetterHash#0;class#main#0" expanded="false" />
-            <element signature="method#printCurrentStatus#0;class#main#0" expanded="false" />
             <element signature="method#currentStatus#0;class#main#0" expanded="false" />
             <element signature="method#gameInput#0;class#main#0" expanded="false" />
+            <element signature="method#startGame#0;class#main#0" expanded="false" />
             <element signature="method#printCentrally#0;class#main#0" expanded="false" />
-            <marker date="1467399993000" expanded="true" signature="506:3228" ph="..." />
-            <marker date="1467399993000" expanded="true" signature="507:3222" ph="..." />
-            <marker date="1467399993000" expanded="true" signature="507:3228" ph="..." />
+            <element signature="method#addToHistory#0;class#main#0" expanded="false" />
+            <element signature="method#printHistory#0;class#main#0" expanded="false" />
+            <marker date="1467408687000" expanded="true" signature="559:3567" ph="..." />
+            <marker date="1467408687000" expanded="true" signature="560:3561" ph="..." />
+            <marker date="1467408687000" expanded="true" signature="560:3567" ph="..." />
           </folding>
         </state>
       </provider>
@@ -762,22 +793,13 @@
           <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
           <folding>
             <element signature="docComment;class#playGame#0" expanded="false" />
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#199#200#0" expanded="false" />
+            <element signature="e#244#245#0" expanded="false" />
             <element signature="method#createLetterList#0;class#playGame#0" expanded="false" />
             <element signature="method#addToLetterHash#0;class#playGame#0" expanded="false" />
             <element signature="method#printCurrentStatus#0;class#playGame#0" expanded="false" />
             <element signature="method#gameInput#0;class#playGame#0" expanded="false" />
-            <element signature="method#startGame#0;class#playGame#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testStuff.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -793,12 +815,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/testStuff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="332" column="5" selection-start-line="332" selection-start-column="5" selection-end-line="332" selection-end-column="5" />
+        <state relative-caret-position="690">
+          <caret line="271" column="48" selection-start-line="271" selection-start-column="48" selection-end-line="271" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#main#0" expanded="false" />
             <element signature="method#exitTime#0;class#main#0" expanded="false" />
             <element signature="method#isInteger#0;class#main#0" expanded="false" />
             <element signature="method#getUserInput#0;class#main#0" expanded="false" />
@@ -813,13 +844,15 @@
             <element signature="method#lineOfStars#0;class#main#0" expanded="false" />
             <element signature="method#createLetterList#0;class#main#0" expanded="false" />
             <element signature="method#addToLetterHash#0;class#main#0" expanded="false" />
-            <element signature="method#printCurrentStatus#0;class#main#0" expanded="false" />
             <element signature="method#currentStatus#0;class#main#0" expanded="false" />
             <element signature="method#gameInput#0;class#main#0" expanded="false" />
+            <element signature="method#startGame#0;class#main#0" expanded="false" />
             <element signature="method#printCentrally#0;class#main#0" expanded="false" />
-            <marker date="1467399993000" expanded="true" signature="506:3228" ph="..." />
-            <marker date="1467399993000" expanded="true" signature="507:3222" ph="..." />
-            <marker date="1467399993000" expanded="true" signature="507:3228" ph="..." />
+            <element signature="method#addToHistory#0;class#main#0" expanded="false" />
+            <element signature="method#printHistory#0;class#main#0" expanded="false" />
+            <marker date="1467408687000" expanded="true" signature="559:3567" ph="..." />
+            <marker date="1467408687000" expanded="true" signature="560:3561" ph="..." />
+            <marker date="1467408687000" expanded="true" signature="560:3567" ph="..." />
           </folding>
         </state>
       </provider>
