@@ -35,7 +35,7 @@ public class main {
       } else if (firstWord(input).toLowerCase().equals("add") && input.length()>4) {
         if (isValidItem(input.substring(4))) {
           addItem(input.substring(4), list);
-          System.out.println("\nYou have added: "+input.substring(4)+" to the list");
+          System.out.println("\nYou have added '"+input.substring(4)+"' to the list");
         } else {
           System.out.println("\nUnfortunately I don't recognize that as a valid item. To use add, type 'add item name'. Note that typing numbers or typing consecutive spaces is invalid.\n");
         }
@@ -93,6 +93,9 @@ public class main {
 
   public static String getUserInput() {
   //method to save user input as a string
+    for (int i=1;i<=33;i++) {
+      System.out.print(" ");
+    }
     System.out.println("What would you like to do?");
     Scanner input = new Scanner(System.in);
     String userInput = input.nextLine();
@@ -185,11 +188,11 @@ public class main {
 
   public static void homeScreen() {
   //method to print out the layout of the home screen
-    System.out.println("\n****************************************");
+    System.out.println("\n*******************************************************************************************");
     System.out.println("Hello there! Welcome to Dianna's Dinosaur & Donut Emporium's Inventory Tracker\n");
     System.out.println("Please update the list to reflect the latest shipment\n\n");
     System.out.println("When the list is up to date, type 'exit'. To see a list of my other commands, type 'help'.");
-    System.out.println("**************************************** \n");
+    System.out.println("******************************************************************************************* \n");
   }
 
 ///game stuff below here
