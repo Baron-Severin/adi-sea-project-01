@@ -70,11 +70,10 @@ public class main {
 
   public static void exitTime(ArrayList<String> list) {
   //method to exit the Inventory Tracker and print the final list
-    System.out.println("********");
-    System.out.println("Thank you for using Inventory Tracker. Your completed inventory list is:");
-    System.out.println();
+    System.out.println(lineOfStars());
+    System.out.println("\nThank you for using Inventory Tracker. Your completed inventory list is:\n");
     listItems(list);
-    System.out.println("********");
+    System.out.println(lineOfStars());
   }
 
   public static boolean isInteger(String s) {
@@ -148,7 +147,7 @@ public class main {
       int counter=0;
       for (String i : list) {
         counter++;
-        System.out.print("Item # "+counter+": "+i.substring(0, 1).toUpperCase());
+        System.out.print("        Item # "+counter+": "+i.substring(0, 1).toUpperCase());
         if (i.length() > 1) {
           System.out.println(i.substring(1).toLowerCase());
         } else {
@@ -188,14 +187,18 @@ public class main {
 
   public static void homeScreen() {
   //method to print out the layout of the home screen
-    System.out.println("\n*******************************************************************************************");
+    System.out.println("\n"+lineOfStars());
     System.out.println("Hello there! Welcome to Dianna's Dinosaur & Donut Emporium's Inventory Tracker\n");
     System.out.println("Please update the list to reflect the latest shipment\n\n");
     System.out.println("When the list is up to date, type 'exit'. To see a list of my other commands, type 'help'.");
-    System.out.println("******************************************************************************************* \n");
+    System.out.println(lineOfStars()+"\n");
   }
 
 ///game stuff below here
+
+  public static String lineOfStars() {
+  return "*******************************************************************************************";
+}
 
   public static HashMap<Character,Boolean> createLetterList(String phrase) {
     HashMap<Character,Boolean> map = new HashMap<>();
@@ -254,7 +257,9 @@ public class main {
 
     //initialize game checker
     HashMap<Character,Boolean> hash=createLetterList(phrase);
-    System.out.println("\nINSTRUCTIONS ON HOW TO PLAY HANGMAN\n");
+    System.out.println("\n"+lineOfStars());
+    System.out.println("*                                   WELCOME TO HANGMAN!                                   *");
+    System.out.println(lineOfStars());
 
     while (!isWordGuessed && numOfWrongGuesses<8) {
       printCurrentStatus(phrase, hash);
@@ -292,6 +297,22 @@ public class main {
     }
 
     return numOfWrongGuesses;
+  }
+
+  public static void printCentrally(String s) {
+    int length=s.length();
+    if (length<80 && length>0) {
+      int blanks = 92 - length;
+      int numSpaces = (int) blanks / 2;
+      for (int i = 0; i < numSpaces; i++) {
+        System.out.print(" ");
+      }
+      System.out.print(s+"\n\n");
+    } else if (length==0) {
+      System.out.println(("I can't print an empty string!\n"));
+    } else {
+      System.out.println(s+"\n");
+    }
   }
 
 }
