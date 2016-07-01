@@ -1,11 +1,13 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Scanner;
 
 /**
  * Created by matthewtduffin on 29/06/2016.
  */
 public class main {
+
   public static void main(String[] args) {
 
     //***declare an empty arrayList of Strings to hold info
@@ -13,42 +15,56 @@ public class main {
     //***declare a boolean to know when to terminate the program
     boolean isReadyToQuit=false;
 
+//while loop containing main game play
     while (!isReadyToQuit) {
       //start by showing home screen to user
       homeScreen();
       //accept user input
       String input = getUserInput();
-      //check to see if user wants to exit, if so change boolean checker and print exit messages
+    //check to see if user wants to exit, if so change boolean checker and print exit messages
       if (input.equals("exit")) {
         isReadyToQuit=true;
         exitTime(list);
-      //check to see if the user needs help
+    //check to see if the user needs help
       } else if (input.toLowerCase().equals("help")) {
         helpHer();
-      //check to see if the user wants to list all current items
+    //check to see if the user wants to list all current items
       } else if (input.toLowerCase().equals("list")) {
         listItems(list);
-      //if the first words of the command is add, followed by a space, then at least one other character, call add method
+    //if the first words of the command is add, followed by a space, then at least one other character, call add method
       } else if (firstWord(input).toLowerCase().equals("add") && input.length()>4) {
-        addItem(input.substring(4),list);
-      //if the first word is delete, followed by a space, then the remainder of the request in parse-able to an int
+        if (isValidItem(input.substring(4))) {
+          addItem(input.substring(4), list);
+        } else {
+          System.out.println("\nUnfortunately I don't recognize that as a valid item. To use add, type 'add item name'. Note that typing numbers or typing consecutive spaces is invalid.\n");
+        }
+    //if the first word is delete, followed by a space, then the remainder of the request in parse-able to an int
       } else if (firstWord(input).toLowerCase().equals("delete") && isInteger(input.substring(7))) {
-        int a=Integer.parseInt(input.substring(7));
+        int a = Integer.parseInt(input.substring(7));
         //if the integer written is a valid reference the delete it, otherwise return error
-        if (a>0 && a<=list.size()) {
-          deleteItem(a-1,list);
+        if (a > 0 && a <= list.size()) {
+          deleteItem(a - 1, list);
         } else {
           System.out.println();
-          System.out.println("Unfortunately I can't find an item number "+a+". Are you you sure you didn't mean a different item?");
+          System.out.println("Unfortunately I can't find an item number " + a + ". Are you you sure you didn't mean a different item?");
           System.out.println();
         }
-      //if the command received is any other form - I'm not going to try and process it
+    //if the user types play, initialize the game
+      } else if (input.toLowerCase().equals("play")) {
+        String randItem=randomItem(list);
+        if (randItem.equals("  ")) {
+          System.out.println("\nI can't play the game until you add some items to the inventory!\n");
+        } else {
+          int result=startGame(randItem);
+        }
+    //if the command received is any other form - I'm not going to try and process it
       } else {
         System.out.println();
         System.out.println("Unfortunately I didn't understand your request. For more information type 'help'");
         System.out.println();
       }
     }
+
   }
 
   public static void exitTime(ArrayList<String> list) {
@@ -79,6 +95,7 @@ public class main {
     System.out.println("What would you like to do?");
     Scanner input = new Scanner(System.in);
     String userInput = input.nextLine();
+
     return userInput;
   }
 
@@ -94,7 +111,29 @@ public class main {
 
   public static void addItem(String item, ArrayList<String> oldList) {
   //method to add an item to the arrayList
-    oldList.add(item);
+      oldList.add(item);
+  }
+
+  public static boolean isValidItem(String item) {
+    ArrayList<Integer> blankSpaceLocation=new ArrayList<>();
+
+    for (int i=0;i<item.length();i++) {
+      char inputChar=item.toLowerCase().charAt(i);
+      if ((inputChar>=97 && inputChar<=122)) {
+        //do nothing
+      } else if (inputChar==' ') {
+        if (i==0) {
+          return false;
+        }
+        blankSpaceLocation.add(i);
+        if (blankSpaceLocation.contains(i-1)) {
+          return false;
+        }
+      } else {
+        return false;
+      }
+    }
+  return true;
   }
 
   public static void listItems(ArrayList<String> list) {
@@ -118,6 +157,15 @@ public class main {
     System.out.println();
   }
 
+  public static String randomItem(ArrayList<String> list) {
+    if (list.size()>0) {
+      int index = (int) (Math.random() * list.size());
+      return list.get(index);
+    } else {
+      return "  ";
+    }
+  }
+
   public static void deleteItem(int num, ArrayList<String> oldList) {
   //method to delete the item at index num item from oldList
     oldList.remove(num);
@@ -137,13 +185,107 @@ public class main {
   public static void homeScreen() {
   //method to print out the layout of the home screen
     System.out.println("****************************************");
-    System.out.println("Hello there! Welcome to Dianna's Dinosaur & Donut Emporium's Inventory Tracker");
-    System.out.println();
-    System.out.println("Please update the list to reflect the latest shipment");
-    System.out.println();
-    System.out.println();
+    System.out.println("Hello there! Welcome to Dianna's Dinosaur & Donut Emporium's Inventory Tracker\n");
+    System.out.println("Please update the list to reflect the latest shipment\n\n");
     System.out.println("When the list is up to date, type 'exit'. To see a list of my other commands, type 'help'.");
-    System.out.println("****************************************");
-    System.out.println();
+    System.out.println("**************************************** \n");
   }
+
+///game stuff below here
+
+  public static HashMap<Character,Boolean> createLetterList(String phrase) {
+    HashMap<Character,Boolean> map = new HashMap<>();
+    for (int i=0;i<phrase.length();i++) {
+      if (phrase.charAt(i)!=' ') {
+        map.put(phrase.charAt(i),false);
+      }
+    }
+    return map;
+  }
+
+  public static HashMap<Character,Boolean> addToLetterHash(String letter, HashMap<Character,Boolean> hash) {
+    hash.put(letter.charAt(0),true);
+    return hash;
+  }
+
+  public static void printCurrentStatus(String s, HashMap<Character,Boolean> h) {
+    for (int i=0;i<s.length();i++) {
+      char charAtI=s.charAt(i);
+      if (charAtI==' ') {
+        System.out.print("/ ");
+      } else {
+        if (h.get(charAtI)==true) {
+          System.out.print(charAtI+" ");
+        } else {
+          System.out.print("_ ");
+        }
+      }
+    }
+
+  }
+
+  public static String gameInput() {
+    System.out.println("\n\nWhich letter would you like to try?");
+    Scanner input = new Scanner(System.in);
+    String userInput = input.nextLine();
+
+    if (userInput.length()==1) {
+      char inputChar=userInput.toLowerCase().charAt(0);
+      if (inputChar>=97 && inputChar<=122) {
+        return userInput.toLowerCase();
+      } else {
+        return "typeIssue";
+      }
+    } else {
+      return "lengthIssue";
+    }
+  }
+
+  public static int startGame(String phrase) {
+    //set counter: num of turns to return number of guessed taken, isWordGuessed to exit, letterGuessed to return error
+    //if user tries to guess the same letter twice
+    int numOfWrongGuesses=0;
+    boolean isWordGuessed=false;
+    ArrayList<Character> letterGuessed=new ArrayList<>();
+
+    //initialize game checker
+    HashMap<Character,Boolean> hash=createLetterList(phrase);
+
+
+    while (!isWordGuessed && numOfWrongGuesses<8) {
+      printCurrentStatus(phrase, hash);
+      String s=gameInput();
+      if (s.equals("typeIssue")) {
+        System.out.println("\nI didn't recognize that character. Please enter a valid letter.\n");
+      } else if (s.equals("lengthIssue")) {
+        System.out.println("\nYour input must be precisely one character in length. Please try again.\n");
+      } else if (hash.containsKey(s.charAt(0))){
+        if (hash.get(s.charAt(0))==false) {
+          addToLetterHash(s, hash);
+          letterGuessed.add(s.charAt(0));
+          System.out.println("\nHurray! The words does contain at least one "+s+"\n");
+          if (letterGuessed.size() == hash.size()) {
+            isWordGuessed = true;
+            System.out.println("\nWell done! You guessed the item!\n");
+            printCurrentStatus(phrase,hash);
+          }
+        } else {
+          System.out.println("\nYou've already tried that letter. Try something else!\n");
+        }
+      } else {
+        System.out.println("\nSadly not. There aren't any "+s+"'s in this one!\n");
+        numOfWrongGuesses+=1;
+        System.out.println("\nYou've guessed a wrong letter "+numOfWrongGuesses+" times so far.");
+      }
+    }
+
+    if (numOfWrongGuesses==8) {
+      System.out.println("\nGame over. You've reached the maximum number of guesses. Better luck next time!\n");
+    } else  {
+
+    }
+
+    return numOfWrongGuesses;
+  }
+
 }
