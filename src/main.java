@@ -1,7 +1,10 @@
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-
-import javax.xml.crypto.dsig.spec.HMACParameterSpec;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Scanner;
 
 /**
  * Created by matthewtduffin on 29/06/2016.
@@ -207,6 +210,28 @@ public class main {
   }
 
   public static void printWin() {
+
+    String text;
+
+    File file = new File("win.txt");
+
+    try {
+      FileReader fr = new FileReader(file);
+      BufferedReader br = new BufferedReader(fr);
+
+      while ((text = br.readLine()) != null) {
+
+        System.out.println(text);
+
+      }
+
+    } catch (Exception ex) {
+    }
+
+
+
+
+
   }
 
 
