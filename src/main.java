@@ -1,7 +1,7 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Scanner;
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
+import javax.xml.crypto.dsig.spec.HMACParameterSpec;
+import java.util.*;
 
 /**
  * Created by matthewtduffin on 29/06/2016.
@@ -35,6 +35,7 @@ public class main {
       } else if (firstWord(input).toLowerCase().equals("add") && input.length()>4) {
         if (isValidItem(input.substring(4))) {
           addItem(input.substring(4), list);
+          System.out.println("\nYou have added: "+input.substring(4)+" to the list");
         } else {
           System.out.println("\nUnfortunately I don't recognize that as a valid item. To use add, type 'add item name'. Note that typing numbers or typing consecutive spaces is invalid.\n");
         }
@@ -184,7 +185,7 @@ public class main {
 
   public static void homeScreen() {
   //method to print out the layout of the home screen
-    System.out.println("****************************************");
+    System.out.println("\n****************************************");
     System.out.println("Hello there! Welcome to Dianna's Dinosaur & Donut Emporium's Inventory Tracker\n");
     System.out.println("Please update the list to reflect the latest shipment\n\n");
     System.out.println("When the list is up to date, type 'exit'. To see a list of my other commands, type 'help'.");
@@ -250,10 +251,12 @@ public class main {
 
     //initialize game checker
     HashMap<Character,Boolean> hash=createLetterList(phrase);
-
+    System.out.println("\nINSTRUCTIONS ON HOW TO PLAY HANGMAN\n");
 
     while (!isWordGuessed && numOfWrongGuesses<8) {
       printCurrentStatus(phrase, hash);
+      System.out.println("\n\nBRIEF OVERVIEW OF INSTRUCTION\n");
+
       String s=gameInput();
       if (s.equals("typeIssue")) {
         System.out.println("\nI didn't recognize that character. Please enter a valid letter.\n");
