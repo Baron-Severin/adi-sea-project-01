@@ -4,14 +4,15 @@ import java.util.ArrayList;
  * Created by matthewtduffin on 30/06/2016.
  */
 public class hangMan {
-  public static void main(String[] args) {
+  public hangMan() {
+  }
 
+  public static void displayHangman(int i) {
     ArrayList<String> hang=newHangman();
-    printHangman(hang);
-    for (int i=1;i<9;i++) {
-      hang = nextHangman(i, hang);
-      printHangman(hang);
+    for (int j=0;j<i;j++) {
+      hang=nextHangman(j+1,hang);
     }
+    printHangman(hang);
   }
 
   public static ArrayList<String> newHangman() {
@@ -70,9 +71,11 @@ public class hangMan {
   }
 
   public static void printHangman(ArrayList<String> hangman) {
-      for (String s:hangman) {
-        System.out.println(s);
-      }
+    for (String s:hangman) {
+      main.printCentrally(s);
+    }
     System.out.println();
   }
+
+
 }

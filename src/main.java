@@ -96,10 +96,7 @@ public class main {
 
   public static String getUserInput() {
   //method to save user input as a string
-    for (int i=1;i<=33;i++) {
-      System.out.print(" ");
-    }
-    System.out.println("What would you like to do?");
+    printCentrally("What would you like to do?");
     Scanner input = new Scanner(System.in);
     String userInput = input.nextLine();
 
@@ -235,18 +232,38 @@ public class main {
 
   }
 
+  public static String currentStatus(String s, HashMap<Character,Boolean> h) {
+    String t="";
+    for (int i=0;i<s.length();i++) {
+      char charAtI=s.charAt(i);
+      if (charAtI==' ') {
+        t+="/ ";
+      } else {
+        if (h.get(charAtI)==true) {
+          t+=(charAtI+" ");
+        } else {
+          t+="_ ";
+        }
+      }
+    }
+    return t;
+  }
+
   public static String gameInput() {
-    System.out.println("\n\nWhich letter would you like to try?");
+    printCentrally("Which letter would you like to try?");
+    System.out.println();
     Scanner input = new Scanner(System.in);
     String userInput = input.nextLine();
 
     if (userInput.length()==1) {
-      char inputChar=userInput.toLowerCase().charAt(0);
-      if (inputChar>=97 && inputChar<=122) {
+      char inputChar = userInput.toLowerCase().charAt(0);
+      if (inputChar >= 97 && inputChar <= 122) {
         return userInput.toLowerCase();
       } else {
         return "typeIssue";
       }
+    } else if (userInput.toLowerCase().equals("quit")) {
+      return "quit";
     } else {
       return "lengthIssue";
     }
@@ -256,24 +273,40 @@ public class main {
     //set counter: num of turns to return number of guessed taken, isWordGuessed to exit, letterGuessed to return error
     //if user tries to guess the same letter twice
     int numOfWrongGuesses=0;
-    boolean isWordGuessed=false;
+    boolean isWordGuessed=false,userQuit=false;
     ArrayList<Character> letterGuessed=new ArrayList<>();
 
     //initialize game checker
     HashMap<Character,Boolean> hash=createLetterList(phrase);
     System.out.println("\n"+lineOfStars());
-    System.out.println("*                                   WELCOME TO HANGMAN!                                   *");
+    printCentrally("WELCOME TO HANGMAN!");
     System.out.println(lineOfStars());
+    printCentrally("Aim: To guess the blank word below, one letter at a time!");
+    printCentrally("------------------------");
+    printCentrally("To try a letter: type it and hit the 'Enter' key");
+    printCentrally("To view your previous moves: type 'history' and hit the 'Enter' key");
+    printCentrally("To exit game: type 'exit' and hit the 'Enter' key");
 
-    while (!isWordGuessed && numOfWrongGuesses<8) {
-      printCurrentStatus(phrase, hash);
-      System.out.println("\n\nBRIEF OVERVIEW OF INSTRUCTION\n");
+
+    gameplay: while (!isWordGuessed && numOfWrongGuesses<8) {
+      System.out.println();
+      hangMan.displayHangman(numOfWrongGuesses);
+      System.out.println();
+      printCentrally(currentStatus(phrase, hash));
+      System.out.println("");
+      printCentrally("To try a letter, type it. Alternatively, you can view your history or exit the game!");
 
       String s=gameInput();
       if (s.equals("typeIssue")) {
         System.out.println("\nI didn't recognize that character. Please enter a valid letter.\n");
       } else if (s.equals("lengthIssue")) {
         System.out.println("\nYour input must be precisely one character in length. Please try again.\n");
+      } else if (s.equals("quit")){
+        System.out.println(lineOfStars());
+        printCentrally("Thank you for playing Hangman!");
+        System.out.println(lineOfStars());
+        userQuit=true;
+        break gameplay;
       } else if (hash.containsKey(s.charAt(0))){
         if (hash.get(s.charAt(0))==false) {
           addToLetterHash(s, hash);
@@ -296,8 +329,7 @@ public class main {
 
     if (numOfWrongGuesses==8) {
       System.out.println("\nGame over. You've reached the maximum number of guesses. Better luck next time!\n");
-    } else  {
-
+      hangMan.displayHangman(8);
     }
 
     return numOfWrongGuesses;
@@ -311,7 +343,7 @@ public class main {
       for (int i = 0; i < numSpaces; i++) {
         System.out.print(" ");
       }
-      System.out.print(s+"\n\n");
+      System.out.print(s+"\n");
     } else if (length==0) {
       System.out.println(("I can't print an empty string!\n"));
     } else {
