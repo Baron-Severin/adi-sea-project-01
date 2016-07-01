@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="228c78e7-8a4c-4a70-b508-e29ce0241f28" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.java" afterPath="$PROJECT_DIR$/src/main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testStuff.java" afterPath="$PROJECT_DIR$/src/testStuff.java" />
     </list>
     <ignored path="data-collections-lab.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +30,8 @@
       <file leaf-file-name="main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="271" column="48" selection-start-line="271" selection-start-column="48" selection-end-line="271" selection-end-column="48" />
+            <state relative-caret-position="410">
+              <caret line="208" column="33" selection-start-line="208" selection-start-column="33" selection-end-line="208" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#main#0;class#main#0" expanded="false" />
@@ -56,10 +55,20 @@
                 <element signature="method#printCentrally#0;class#main#0" expanded="false" />
                 <element signature="method#addToHistory#0;class#main#0" expanded="false" />
                 <element signature="method#printHistory#0;class#main#0" expanded="false" />
-                <marker date="1467408687000" expanded="true" signature="559:3567" ph="..." />
-                <marker date="1467408687000" expanded="true" signature="560:3561" ph="..." />
-                <marker date="1467408687000" expanded="true" signature="560:3567" ph="..." />
+                <marker date="1467409203000" expanded="true" signature="559:3567" ph="..." />
+                <marker date="1467409203000" expanded="true" signature="560:3561" ph="..." />
+                <marker date="1467409203000" expanded="true" signature="560:3567" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="win.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/win.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -533,7 +542,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="15" y="23" width="1260" height="709" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -543,7 +552,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2564516" sideWeight="0.12301587" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.128125" sideWeight="0.8769841" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.146875" sideWeight="0.8769841" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -602,9 +611,9 @@
             <element signature="method#printCentrally#0;class#main#0" expanded="false" />
             <element signature="method#addToHistory#0;class#main#0" expanded="false" />
             <element signature="method#printHistory#0;class#main#0" expanded="false" />
-            <marker date="1467408687000" expanded="true" signature="559:3567" ph="..." />
-            <marker date="1467408687000" expanded="true" signature="560:3561" ph="..." />
-            <marker date="1467408687000" expanded="true" signature="560:3567" ph="..." />
+            <marker date="1467409203000" expanded="true" signature="559:3567" ph="..." />
+            <marker date="1467409203000" expanded="true" signature="560:3561" ph="..." />
+            <marker date="1467409203000" expanded="true" signature="560:3567" ph="..." />
           </folding>
         </state>
       </provider>
@@ -636,9 +645,9 @@
             <element signature="method#printCentrally#0;class#main#0" expanded="false" />
             <element signature="method#addToHistory#0;class#main#0" expanded="false" />
             <element signature="method#printHistory#0;class#main#0" expanded="false" />
-            <marker date="1467408687000" expanded="true" signature="559:3567" ph="..." />
-            <marker date="1467408687000" expanded="true" signature="560:3561" ph="..." />
-            <marker date="1467408687000" expanded="true" signature="560:3567" ph="..." />
+            <marker date="1467409203000" expanded="true" signature="559:3567" ph="..." />
+            <marker date="1467409203000" expanded="true" signature="560:3561" ph="..." />
+            <marker date="1467409203000" expanded="true" signature="560:3567" ph="..." />
           </folding>
         </state>
       </provider>
@@ -670,9 +679,9 @@
             <element signature="method#printCentrally#0;class#main#0" expanded="false" />
             <element signature="method#addToHistory#0;class#main#0" expanded="false" />
             <element signature="method#printHistory#0;class#main#0" expanded="false" />
-            <marker date="1467408687000" expanded="true" signature="559:3567" ph="..." />
-            <marker date="1467408687000" expanded="true" signature="560:3561" ph="..." />
-            <marker date="1467408687000" expanded="true" signature="560:3567" ph="..." />
+            <marker date="1467409203000" expanded="true" signature="559:3567" ph="..." />
+            <marker date="1467409203000" expanded="true" signature="560:3561" ph="..." />
+            <marker date="1467409203000" expanded="true" signature="560:3567" ph="..." />
           </folding>
         </state>
       </provider>
@@ -704,9 +713,9 @@
             <element signature="method#printCentrally#0;class#main#0" expanded="false" />
             <element signature="method#addToHistory#0;class#main#0" expanded="false" />
             <element signature="method#printHistory#0;class#main#0" expanded="false" />
-            <marker date="1467408687000" expanded="true" signature="559:3567" ph="..." />
-            <marker date="1467408687000" expanded="true" signature="560:3561" ph="..." />
-            <marker date="1467408687000" expanded="true" signature="560:3567" ph="..." />
+            <marker date="1467409203000" expanded="true" signature="559:3567" ph="..." />
+            <marker date="1467409203000" expanded="true" signature="560:3561" ph="..." />
+            <marker date="1467409203000" expanded="true" signature="560:3567" ph="..." />
           </folding>
         </state>
       </provider>
@@ -738,9 +747,9 @@
             <element signature="method#printCentrally#0;class#main#0" expanded="false" />
             <element signature="method#addToHistory#0;class#main#0" expanded="false" />
             <element signature="method#printHistory#0;class#main#0" expanded="false" />
-            <marker date="1467408687000" expanded="true" signature="559:3567" ph="..." />
-            <marker date="1467408687000" expanded="true" signature="560:3561" ph="..." />
-            <marker date="1467408687000" expanded="true" signature="560:3567" ph="..." />
+            <marker date="1467409203000" expanded="true" signature="559:3567" ph="..." />
+            <marker date="1467409203000" expanded="true" signature="560:3561" ph="..." />
+            <marker date="1467409203000" expanded="true" signature="560:3567" ph="..." />
           </folding>
         </state>
       </provider>
@@ -772,9 +781,9 @@
             <element signature="method#printCentrally#0;class#main#0" expanded="false" />
             <element signature="method#addToHistory#0;class#main#0" expanded="false" />
             <element signature="method#printHistory#0;class#main#0" expanded="false" />
-            <marker date="1467408687000" expanded="true" signature="559:3567" ph="..." />
-            <marker date="1467408687000" expanded="true" signature="560:3561" ph="..." />
-            <marker date="1467408687000" expanded="true" signature="560:3567" ph="..." />
+            <marker date="1467409203000" expanded="true" signature="559:3567" ph="..." />
+            <marker date="1467409203000" expanded="true" signature="560:3561" ph="..." />
+            <marker date="1467409203000" expanded="true" signature="560:3567" ph="..." />
           </folding>
         </state>
       </provider>
@@ -823,10 +832,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/win.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="271" column="48" selection-start-line="271" selection-start-column="48" selection-end-line="271" selection-end-column="48" />
+        <state relative-caret-position="410">
+          <caret line="208" column="33" selection-start-line="208" selection-start-column="33" selection-end-line="208" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#main#0;class#main#0" expanded="false" />
@@ -850,9 +867,9 @@
             <element signature="method#printCentrally#0;class#main#0" expanded="false" />
             <element signature="method#addToHistory#0;class#main#0" expanded="false" />
             <element signature="method#printHistory#0;class#main#0" expanded="false" />
-            <marker date="1467408687000" expanded="true" signature="559:3567" ph="..." />
-            <marker date="1467408687000" expanded="true" signature="560:3561" ph="..." />
-            <marker date="1467408687000" expanded="true" signature="560:3567" ph="..." />
+            <marker date="1467409203000" expanded="true" signature="559:3567" ph="..." />
+            <marker date="1467409203000" expanded="true" signature="560:3561" ph="..." />
+            <marker date="1467409203000" expanded="true" signature="560:3567" ph="..." />
           </folding>
         </state>
       </provider>

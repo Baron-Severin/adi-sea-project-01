@@ -206,6 +206,11 @@ public class main {
     System.out.println(lineOfStars()+"\n");
   }
 
+  public static void printWin() {
+  }
+
+
+
 ///game stuff below here
 
   public static String lineOfStars() {

@@ -1,0 +1,16 @@
+WWWWWWWW                           WWWWWWWW     IIIIIIIIII     NNNNNNNN        NNNNNNNN
+W::::::W                           W::::::W     I::::::::I     N:::::::N       N::::::N
+W::::::W                           W::::::W     I::::::::I     N::::::::N      N::::::N
+W::::::W                           W::::::W     II::::::II     N:::::::::N     N::::::N
+ W:::::W           WWWWW           W:::::W        I::::I       N::::::::::N    N::::::N
+  W:::::W         W:::::W         W:::::W         I::::I       N:::::::::::N   N::::::N
+   W:::::W       W:::::::W       W:::::W          I::::I       N:::::::N::::N  N::::::N
+    W:::::W     W:::::::::W     W:::::W           I::::I       N::::::N N::::N N::::::N
+     W:::::W   W:::::W:::::W   W:::::W            I::::I       N::::::N  N::::N:::::::N
+      W:::::W W:::::W W:::::W W:::::W             I::::I       N::::::N   N:::::::::::N
+       W:::::W:::::W   W:::::W:::::W              I::::I       N::::::N    N::::::::::N
+        W:::::::::W     W:::::::::W               I::::I       N::::::N     N:::::::::N
+         W:::::::W       W:::::::W              II::::::II     N::::::N      N::::::::N
+          W:::::W         W:::::W               I::::::::I     N::::::N       N:::::::N
+           W:::W           W:::W                I::::::::I     N::::::N        N::::::N
+            WWW             WWW                 IIIIIIIIII     NNNNNNNN         NNNNNNN
